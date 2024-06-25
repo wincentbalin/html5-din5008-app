@@ -1,0 +1,116 @@
+div[contenteditable] {
+    padding: 0.5em
+}
+
+div[contenteditable]:not(:focus) {
+    outline: 1px lightgray solid
+}
+
+div[contenteditable].multiline {
+    min-height: 4em
+}
+
+#addressnote, #footer {
+    min-height: 2em
+}
+
+label {
+    display: block;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-weight: bold;
+    margin-top: 2ex;
+    margin-bottom: 0.5ex
+}
+
+#foldmark1, #punchmark, #foldmark2 {
+    position: absolute;
+    display: none
+}
+
+@media print {
+    @page {
+        page: A4 portrait;
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    * {
+        margin: 0
+    }
+
+    .non-printable, label {
+        display: none
+    }
+
+    div[contenteditable] {
+        position: absolute;
+        padding: 0
+    }
+
+    div[contenteditable]:not(:focus) {
+        outline: none
+    }
+
+    #backaddress, #addressnote, #address {
+        left: 20mm;
+        padding-left: 5mm;
+        width: 85mm
+    }
+
+    #backaddress {
+        top: 27mm;
+        height: 5mm;
+        font-size: small
+    }
+
+    #addressnote {
+        top: calc(27mm + 5mm);
+        height: 12.7mm;
+        padding-top: 0.1em
+    }
+
+    #address {
+        top: calc(27mm + 5mm + 12.7mm);
+        height: 27.3mm
+    }
+
+    #additionalinformation {
+        position: static;
+        display: inline-block;
+        margin-top: 32mm;
+        margin-left: 125mm;
+        min-height: 40mm;
+        max-width: 75mm
+    }
+
+    #text, #footer {
+        left: 25mm;
+        right: 20mm;
+        margin-top: 8.46mm
+    }
+
+    #footer {
+        bottom: 0
+    }
+
+    #foldmark1, #punchmark, #foldmark2 {
+        display: block;
+        border-top: black 1px solid;
+        height: 1px
+    }
+
+    #foldmark1 {
+        top: 87mm;
+        width: 10mm
+    }
+
+    #punchmark {
+        top: 148.5mm;
+        width: 15mm
+    }
+
+    #foldmark2 {
+        top: calc(87mm + 105mm);
+        width: 10mm
+    }
+}
