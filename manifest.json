@@ -1,0 +1,13 @@
+{
+    "name": "DIN5008 Brief",
+    "short_name": "✉",
+    "icons": [
+        {
+            "src": "icon.svg",
+            "sizes": "100x100",
+            "type": "image/svg+xml"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone"
+}
