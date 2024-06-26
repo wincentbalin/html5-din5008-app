@@ -7,8 +7,8 @@ var inputIds = ['backaddress', 'addressnote', 'address', 'additionalinformation'
 document.querySelector('#share').addEventListener('click', function(event) {
     var params = new URLSearchParams();
     inputIds.forEach(function(id) {
-        var text = document.getElementById(id).innerText;
-        if (text.trim() !== '') {
+        var text = document.getElementById(id).innerText.trim();
+        if (text !== '') {
             params.set(id, text);
         }
     });
