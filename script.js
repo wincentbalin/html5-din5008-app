@@ -9,7 +9,7 @@ document.querySelector('#share').addEventListener('click', function(event) {
     inputIds.forEach(function(id) {
         var text = document.getElementById(id).innerText;
         if (text.trim() !== '') {
-            params.set(id, encodeURIComponent(text));
+            params.set(id, text);
         }
     });
     var url = [document.location.origin, document.location.pathname,
@@ -21,8 +21,7 @@ if (document.location.search) {
     var params = new URLSearchParams(document.location.search);
     inputIds.forEach(function(id) {
         if (params.has(id)) {
-            var text = decodeURIComponent(params.get(id));
-            document.getElementById(id).innerText = text;
+            document.getElementById(id).innerText = params.get(id);
         }
     });
 }
