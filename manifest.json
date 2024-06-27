@@ -3,7 +3,7 @@
     "short_name": "Brief",
     "icons": [
         {
-            "src": "icon.svg",
+            "src": "/html5-din5008-app/icon.svg",
             "sizes": "128x128 512x512",
             "type": "image/svg+xml"
         }
