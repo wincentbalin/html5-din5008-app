@@ -11,14 +11,14 @@ const APP_STATIC_RESOURCES = [
 
 self.addEventListener('install', (event) => {
     event.waitUntil((async () => {
-        var cache = await caches.open(CACHE_NAME);
+        const cache = await caches.open(CACHE_NAME);
         cache.addAll(APP_STATIC_RESOURCES);
     })());
 });
 
 self.addEventListener('activate', (event) => {
     event.waitUntil((async () => {
-        var names = await caches.keys();
+        const names = await caches.keys();
         await Promise.all(names.map((name) => {
             if (name !== CACHE_NAME) {
                 return caches.delete(name);
@@ -37,8 +37,8 @@ self.addEventListener('fetch', (event) => {
 
     // Return every other request
     event.respondWith((async () => {
-        var cache = await caches.open(CACHE_NAME);
-        var cachedResponse = await cache.match(event.request.url);
+        const cache = await caches.open(CACHE_NAME);
+        const cachedResponse = await cache.match(event.request.url);
         // Return cached file
         if (cachedResponse) {
             return cachedResponse;
