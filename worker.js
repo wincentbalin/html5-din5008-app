@@ -34,7 +34,7 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     // Return index.html
     if (event.request.mode === 'navigate') {
-        event.respondWith(caches.match('/'));
+        event.respondWith(caches.match(APP_DIR + '/'));
         return;
     }
 
