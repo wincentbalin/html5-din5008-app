@@ -33,14 +33,7 @@
     <script src="script.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('worker.js').then(
-                (registration) => {
-                    console.log('Successfully registered service worker:', registration);
-                },
-                (error) => {
-                    console.log(`Failed to register service worker: ${error}`);
-                }
-            );
+            navigator.serviceWorker.register('worker.js');
         } else {
             alert('Deine Plattform wird nicht unterstützt!');
         }
