@@ -8,6 +8,6 @@
             "type": "image/svg+xml"
         }
     ],
-    "start_url": "/",
+    "start_url": "/html5-din5008-app/",
     "display": "standalone"
 }

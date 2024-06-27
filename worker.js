@@ -1,12 +1,13 @@
 const VERSION = 'v1';
 const CACHE_NAME = `din5008-${VERSION}`;
+const APP_DIR = '/html5-din5008-app';
 const APP_STATIC_RESOURCES = [
-    '/',
-    '/index.html',
-    '/style.css',
-    '/icon.svg',
-    '/script.js',
-    '/worker.js'
+    APP_DIR + '/',
+    APP_DIR + '/index.html',
+    APP_DIR + '/style.css',
+    APP_DIR + '/icon.svg',
+    APP_DIR + '/script.js',
+    APP_DIR + '/worker.js'
 ];
 
 self.addEventListener('install', (event) => {
