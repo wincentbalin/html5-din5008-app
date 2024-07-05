@@ -8,6 +8,11 @@
             "type": "image/svg+xml"
         }
     ],
+    "url_handlers": [
+        {
+            "origin": "https://wincentbalin.github.io/html5-din5008-app/"
+        }
+    ],
     "start_url": "/html5-din5008-app/",
     "display": "standalone"
 }
