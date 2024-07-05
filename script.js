@@ -14,7 +14,12 @@ document.querySelector('#share').addEventListener('click', function(event) {
     });
     var url = [document.location.origin, document.location.pathname,
                '?', params.toString()].join('');
-    window.open(url, '_blank');
+    var shareData = {title: 'Briefvorlage', text: url, url: url};
+    if (navigator.canShare(shareData)) {
+        navigator.share(shareData);
+    } else {
+        window.prompt('Kopiere die Vorlage und drücke beliebigen Knopf', url);
+    }
 });
 
 if (document.location.search) {
