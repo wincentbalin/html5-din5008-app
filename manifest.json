@@ -14,5 +14,12 @@
         }
     ],
     "start_url": "/html5-din5008-app/",
+    "share_target": {
+        "action": "/html5-din5008-app/",
+        "method": "GET",
+        "params": {
+            "text": "text"
+        }
+    },
     "display": "standalone"
 }
