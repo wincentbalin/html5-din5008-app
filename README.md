@@ -4,11 +4,10 @@ This web app allows you to write German business letters according to the DIN 50
 
 # Usage
 
-Simply copy [index.html](index.html) either locally or to another server, or simply use the [default instance](https://wincentbalin.github.io/html5-din5008-app/).
+Simply copy all files to another server, or simply use the [default instance](https://wincentbalin.github.io/html5-din5008-app/).
 
-Open [index.html](index.html) and use the button `Print` to print the letter to paper or
-to PDF file, and the `Share` button to share the letter as URL. The latter button will open
-that URL in another browser tab or window. You can also copy this URL and use it as a template.
+Open the URL of the app and install it. Use the button `Print` to print the letter to paper or
+to PDF file, and the `Share` button to share the letter as URL. To open a letter with a pre-written text simply share that text with the app.
 
 # License
 
