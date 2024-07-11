@@ -6,6 +6,8 @@ const APP_STATIC_RESOURCES = [
     '/index.html',
     '/style.css',
     '/icon.svg',
+    '/icon1.png',
+    '/icon5.png',
     '/script.js',
     '/worker.js'
 ].map((path) => {

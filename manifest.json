@@ -3,9 +3,14 @@
     "short_name": "Brief",
     "icons": [
         {
-            "src": "/html5-din5008-app/icon.svg",
-            "sizes": "192x192 512x512",
-            "type": "image/svg+xml"
+            "src": "/html5-din5008-app/icon1.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/html5-din5008-app/icon5.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ],
     "url_handlers": [
