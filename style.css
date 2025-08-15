@@ -30,8 +30,7 @@ label {
 @media print {
     @page {
         page: A4 portrait;
-        margin-left: 0;
-        margin-right: 0
+        margin: 0
     }
 
     * {
